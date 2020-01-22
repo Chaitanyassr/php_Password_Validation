@@ -5,7 +5,7 @@
 	<title>password validation</title>
 </head>
 <body>
-	<form action="class.php">
+	<form action="">
 		<div class="FormV">
 				<label>Enter your username</label>
 			<input for="username" placeholder="Enter your username" required>
