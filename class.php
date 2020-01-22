@@ -8,6 +8,12 @@ function check($password) {
             $response = "Password must contain at least one letter";
 	} else if(!preg_match('#[0-9]#', $password)){
 	    $response = "Password must contain at least one number";
+	} else if(!preg_match('@[A-Z]@', $password)){
+	    $response = "Password must contain at least one number";
+	}else if(!preg_match('@[a-z]@', $password)){
+	    $response = "Password must contain at least one number";
+	}else if(!preg_match('@[^\w]@', $password)){
+	    $response = "Password must contain at least one number";
 	}
 	return $response;
 }
