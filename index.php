@@ -12,7 +12,7 @@
 </head>
 <body>
 	<form action= "index.php" method = "POST">
-		<div class="FormV" class="tan">
+		<div class="FormV">
 				<label>Enter your username</label>
 			<input for="username" name="name" placeholder="Enter your username" required>
 			<label>Enter your password</label>
@@ -21,7 +21,7 @@
 			<button type="submit" value="Check Password Strength">submit</button>
 		</div>
 	</form>
-			  <div class="container signin" class="blue-water">
+			  <div class="container signin">
     <p>Already have an account? <a href="#">Sign in</a>.</p>
   </div>
 		</div>
@@ -31,7 +31,7 @@ $password = "";
 $status = "";
 if(isset($_POST["password"])){
 	$password = $_POST["password"];
-	include_once("class.php");
+
 	$isvalidpassword = new isvalidpassword();
 	$response = $isvalidpassword->check($password);
 	if($response != "OK"){
