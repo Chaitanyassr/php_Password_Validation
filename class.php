@@ -7,7 +7,7 @@ class Form_data
 	public $password;
 	public $symbols;
 	
-	function __construct(argument)
+	function  validation(argument)
 	{
 		# code...
 	}
