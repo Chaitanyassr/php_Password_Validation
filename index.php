@@ -4,6 +4,11 @@
 	<link href="https://github.com/Chaitanyassr/pandakit-1/blob/master/assets/css/pandakit.css" rel="stylesheet"/>
 	<?php include 'class.php';?>
 	<title>password validation</title>
+	<style type="text/css">
+		input {display: block;
+		}
+		#status {color : red;}
+	</style>
 </head>
 <body>
 	<form action= "index.php" method = "POST">
@@ -11,7 +16,8 @@
 				<label>Enter your username</label>
 			<input for="username" name="name" placeholder="Enter your username" required>
 			<label>Enter your password</label>
-			<input for="password" name="password" type="password" value="<?php echo $password; ?>" placeholder="enter your password" required>
+			<span id='status'></span>
+			<input name="password" type="password" value="" placeholder="enter your password" required>
 			<button type="submit" value="Check Password Strength">submit</button>
 		</div>
 	</form>
@@ -20,7 +26,7 @@
   </div>
 		</div>
 	</form>
-	<?php
+	 <?php
 $password = "";
 $status = "";
 if(isset($_POST["password"])){
@@ -33,7 +39,10 @@ if(isset($_POST["password"])){
 	} else {
 		$status = "Password is strong.";
 	}
+	echo "<script> document.getElementById('status').innerHTML = '".$status."';</script>";
+	?>
+	<?php
 }
-?>
+?> 
 </body>
 </html>>

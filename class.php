@@ -1,4 +1,5 @@
 <?php 
+echo "load_test";
 class isvalidpassword{
 function check($password) {
   $pas = "password";
