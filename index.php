@@ -5,8 +5,7 @@
 	<?php include 'class.php';?>
 	<title>password validation</title>
 	<style type="text/css">
-		input {display: block;
-		}
+		input {display: block;}
 		#status {color : red;}
 	</style>
 </head>
@@ -31,7 +30,6 @@ $password = "";
 $status = "";
 if(isset($_POST["password"])){
 	$password = $_POST["password"];
-
 	$isvalidpassword = new isvalidpassword();
 	$response = $isvalidpassword->check($password);
 	if($response != "OK"){
