@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="https://github.com/CirclepandaLab/pandakit/blob/master/assets/css/pandakit.css">
 	<title>password validation</title>
 </head>
 <body>
-	<form action="">
-		<div class="formV">
+	<form action="class.php">
+		<div class="FormV">
 				<label>Enter your username</label>
 			<input for="username" placeholder="Enter your username" required>
 			<label>Enter your password</label>

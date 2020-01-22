@@ -1,6 +1,6 @@
 <?php     
 
-class Form_data
+class FormV
 {
 	public $LowerCase;
 	public $UpperCase;
