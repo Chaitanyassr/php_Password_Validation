@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<?php include('class.php') ?>
 	<link rel="stylesheet" href="https://github.com/CirclepandaLab/pandakit/blob/master/assets/css/pandakit.css">
 	<title>password validation</title>
 </head>
