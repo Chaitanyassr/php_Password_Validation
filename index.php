@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href="https://github.com/Chaitanyassr/pandakit-1/blob/master/assets/css/pandakit.css" rel="stylesheet"/>
 	<?php include 'class.php';?>
-	<link rel="stylesheet" href="https://github.com/CirclepandaLab/pandakit/blob/master/assets/css/pandakit.css">
 	<title>password validation</title>
 </head>
 <body>
