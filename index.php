@@ -11,8 +11,8 @@
 				<label>Enter your username</label>
 			<input for="username" name="name" placeholder="Enter your username" required>
 			<label>Enter your password</label>
-			<input for="password" placeholder="enter your password" required>
-			<button type="submit">submit</button>
+			<input for="password" name="password" type="password" value="<?php echo $password; ?>" placeholder="enter your password" required>
+			<button type="submit" value="Check Password Strength">submit</button>
 		</div>
 	</form>
 			  <div class="container signin" class="blue-water">
@@ -20,5 +20,20 @@
   </div>
 		</div>
 	</form>
+	<?php
+$password = "";
+$status = "";
+if(isset($_POST["password"])){
+	$password = $_POST["password"];
+	include_once("class.php");
+	$isvalidpassword = new isvalidpassword();
+	$response = $isvalidpassword->check($password);
+	if($response != "OK"){
+		$status = $response;
+	} else {
+		$status = "Password is strong so parsing can continue here.";
+	}
+}
+?>
 </body>
 </html>>
