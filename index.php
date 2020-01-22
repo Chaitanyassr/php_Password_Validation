@@ -5,7 +5,7 @@
 </head>
 <body>
 	<form action="">
-		<div class="">
+		<div class="formV">
 				<label>Enter your username</label>
 			<input for="username" placeholder="Enter your username" required>
 			<label>Enter your password</label>
