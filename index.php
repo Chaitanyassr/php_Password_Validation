@@ -31,7 +31,7 @@ if(isset($_POST["password"])){
 	if($response != "OK"){
 		$status = $response;
 	} else {
-		$status = "Password is strong so parsing can continue here.";
+		$status = "Password is strong.";
 	}
 }
 ?>
