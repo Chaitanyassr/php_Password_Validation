@@ -1,7 +1,14 @@
 <?php 
 class is_valid_password{
 function is_valid_password($password) {
-    return preg_match_all('$S*(?=S{8,})(?=S*[a-z])(?=S*[A-Z])(?=S*[d])(?=S*[W])S*$', $password) ? TRUE : FALSE;
+  $response = "OK";
+        if(strlen($password) < 8){
+            $response = "Password must be at least 8 characters";
+        } else if(is_numeric($password)){
+            $response = "Password must contain at least one letter";
+	} else if(!preg_match('#[0-9]#', $password)){
+	    $response = "Password must contain at least one number";
+	}
 }
 }
  ?>

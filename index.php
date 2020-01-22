@@ -6,7 +6,7 @@
 	<title>password validation</title>
 </head>
 <body>
-	<form action= "" method = "POST">
+	<form action= "index.php" method = "POST">
 		<div class="FormV" class="tan">
 				<label>Enter your username</label>
 			<input for="username" name="name" placeholder="Enter your username" required>
