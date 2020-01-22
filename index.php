@@ -7,14 +7,14 @@
 </head>
 <body>
 	<form action="">
-		<div class="FormV">
+		<div class="FormV" class="tan">
 				<label>Enter your username</label>
 			<input for="username" placeholder="Enter your username" required>
 			<label>Enter your password</label>
 			<input for="password" placeholder="enter your password" required>
 			<button type="submit">submit</button>
 		</div>
-			  <div class="container signin">
+			  <div class="container signin" class="blue-water">
     <p>Already have an account? <a href="#">Sign in</a>.</p>
   </div>
 		</div>
