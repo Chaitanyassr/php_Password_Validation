@@ -12,6 +12,10 @@
 			<input for="password" placeholder="enter your password" required>
 			<button type="submit">submit</button>
 		</div>
+			  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+		</div>
 	</form>
 </body>
 </html>>
