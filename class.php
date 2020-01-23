@@ -15,7 +15,7 @@ function check($password) {
 	    $response = "Password must contain at least one small letter";
 	} else if(!preg_match('@[^\w]@', $password)){
 	    $response = "Password must contain at least one symbol";
-	} else if(!preg_match('@[^\w]@', $password)){
+	} else if(preg_match("/Password/", $password)){
 	    $response = "Password cant be the word password";
 	}
 	return $response;
