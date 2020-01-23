@@ -5,7 +5,7 @@ function check($password) {
   $response = "OK";
         if(strlen($password) < 8){
             $response = "Password must be at least 8 characters";
-    } else if(preg_match('/password/', $password)){
+    } else if(preg_match('/password/i', $password)){
 	    $response = "Password cant be the word password";
 	} else if(is_numeric($password)){
             $response = "Password must contain at least one letter";
